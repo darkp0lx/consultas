@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Consultas</title>
+</head>
+
+<body>
+  <header>
+    <div class="contenedor-nav">
+      <div class="logo">
+        <img src="img/logo.png" alt="logo.png">
+      </div>
+      <div class="nav">
+        <ul>
+          <li class="enlaces"><a href="https://gisanddata.maps.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6">Mapa <br> coronavirus</a></li>
+          <li class="enlaces"><a href="">informes</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="background">
+      <img src="img/cusco-paisaje2.jpg" alt="background.jpg">
+      <div class="text-background">
+        <h1>Juntos Contra el Coronavirus</h1>
+        <button>Consulta Médica <br>Online</button>
+      </div>
+    </div>
+  </header>
+  <div class="main">
+    <div class="contenedor-informacion">
+      <div class="informacion">
+        <h3>Recomendaciones</h3>
+        <ul>
+          <li>Se pone a disposición de todo el público las consultas Medicas Online para la no saturacion de los
+            hospitales y centros de salud.</li><br>
+          <li>Esta es una iniciativa del Colegio Médico del Perú Consejo regional VI Cusco,Federacion Medica Región
+            Cusco y la UNSAAC</li><br>
+          <li>Contamos con la disposión de doctores de la Región quienes con mucho gusto atenderan sus consultas.</li>
+          <br>
+        </ul>
+      </div>
+      <div class="contenedor-img">
+        <img id="ilustracion-doc" src="img/draw-medical1.jpg" alt="">
+      </div>
+      <div class="quedate">
+        <img id="corazon" src="img/corazon.svg" alt="">
+        <img src="img/casa.svg" alt="">
+        <p style="color:rgba(66,0,57,1)">#yoMeQuedoEnCasa</p>
+      </div>
+    </div>
+    <div class="contenedor-form">
+      <h3>Realiza tu Consulta Online</h3>
+      <form id="formulario" action="">
+        <label for="names">Nombres:</label>
+        <input id=name class="info-textos" type="text"><br>
+
+        <label for="DNI">Dni:</label>
+        <input id="Dni" class="info-textos" type="number"><br>
+
+        <label for="years">Edad:</label>
+        <input id='years' class="info-textos" type="number">
+        <label for="">Hombre </label>
+        <input name="sexo" value="sexo" type="radio">
+        <label for="">Mujer </label>
+        <input name="sexo" value="sexo" type="radio">
+        <div class="container-dropdown">
+          <label class="text-dropdown" for="">especialidad :</label>
+          <select id="especialidad" class="input-especialidad" name="Especialidad">
+            <option value="medicina-general">Medicina General</option>
+            <option value="pedriatria">Pediatria</option>
+            <option value="cardiologia">Cardiologia</option>
+            <option value="ginecologia-obstetricia">Ginecologia y obstetricia</option>
+            <option value="urologo">Urologo</option>
+          </select><br>
+        </div>
+
+        <label for="Complicaciones">Complicaciones Medicas:</label><br>
+        <input id="complicateMedic" class="info-textos" type="Text"
+          placeholder="ejemplo: Hipertension,presion alta etc"><br>
+        <label for="name">Consulta:</label><br>
+        <textarea name="" id="consulta" cols="30" rows="10"
+          placeholder="  ejemplo:tos seca,sudoracion etc."></textarea><br>
+        <div class="contenedor-botones">
+          <i><img src="img/icons8-whatsapp.svg" alt=""></i>
+          <input id="boton-whatsapp" class="boton boton-whatsapp" type="submit" value="Enviar por whatsapp">
+          <input class="boton boton-facebook" type="submit" value="Enviar por Facebook">
+        </div>
+      </form>
+    </div>
+  </div>
+  <footer>
+    <div class="contenedor-footer">
+      <a href="">Ministerio de Salud<i>logo</i></a>
+      <a href="">Ministerio del Interior <i>logo</i></a>
+      <a href="">Gobierno Nacional <i>logo</i></a>
+    </div>
+    <div class="contenedor-footer">
+      <a href="">Mapa de la enfermedad </a>
+      <a href="">Bono de subsidio <i>logo</i></a>
+      <a href="">Mas Información <i>logo</i></a>
+    </div>
+
+  </footer>
+  <script src="main.js"></script>
+</body>
+
+</html>
